@@ -13,6 +13,10 @@ form {
   background: white;
 }
 
+.todo-input:focus {
+  outline: none;
+}
+
 .todo-button {
   color: #2160ce;
   background: #f7fffe;
@@ -59,8 +63,4 @@ select {
   background: #2160ce;
   cursor: pointer;
   pointer-events: none;
-}
-
-.select:hover::after {
-  background: white;
 }
