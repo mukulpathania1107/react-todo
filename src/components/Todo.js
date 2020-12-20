@@ -1,4 +1,4 @@
-// import './Todo.css';
+import './Todo.css';
 
 const Todo = ({ todo }) => {
     return (

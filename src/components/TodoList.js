@@ -1,5 +1,5 @@
 import Todo from './Todo';
-// import './TodoList.css';
+import './TodoList.css';
 
 const TodoList = ({ todos }) => {
     return (
