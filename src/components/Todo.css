@@ -37,3 +37,8 @@
 .fa-check {
   pointer-events: none;
 }
+
+.completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
