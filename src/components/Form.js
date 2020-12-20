@@ -7,8 +7,10 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
 
     const submitTodoHandler = e => {
         e.preventDefault();
-        setTodos([...todos, { text: inputText, completed: false, id: Math.random() * 10000 }]);
-        setInputText('');
+        if (inputText) {
+            setTodos([...todos, { text: inputText, completed: false, id: Math.random() * 10000 }]);
+            setInputText('');
+        }
     };
 
     const statusChangeHandler = e => {
