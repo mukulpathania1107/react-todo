@@ -1,0 +1,66 @@
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-input,
+.todo-button {
+  padding: 0.6rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+}
+
+.todo-button {
+  color: #2160ce;
+  background: #f7fffe;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.todo-button:hover {
+  color: #f7fffe;
+  background: #2160ce;
+}
+
+.filter-todo {
+  padding: 1rem;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+  color: #2160ce;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  width: 12rem;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: #2160ce;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.select:hover::after {
+  background: white;
+}
