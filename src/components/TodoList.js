@@ -1,11 +1,11 @@
 import Todo from './Todo';
 import './TodoList.css';
 
-const TodoList = ({ todos, setTodos, status }) => {
+const TodoList = ({ todos, setTodos, status, filteredTodos }) => {
     return (
         <div className="todo-container">
             <ul className="todo-list">
-                {todos.map(todo => (
+                {filteredTodos.map(todo => (
                     <Todo todos={todos} setTodos={setTodos} todo={todo} key={todo.id} />
                 ))}
             </ul>
